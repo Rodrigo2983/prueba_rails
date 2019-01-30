@@ -6,14 +6,33 @@ end
 
 def new 
     @todo = Todo.new
-    @todo.save
+  
 end
 
-def 
-
-
+def create
+    todo = Todo.news
+    todo.save
+    redirect_to @todos
 end 
 
+def show 
+    @todos = Todo.find(params[:id])
+end
+
+def edit
+    @todos = Todo.find(params[:id])
+end
+
+def update 
+    
+    @todos = Todo.find(params[:id])   
+end
+
+
+private
+
+def todo_params
+    params.require(:todo).permit(:description, :completed)
     
 end
 

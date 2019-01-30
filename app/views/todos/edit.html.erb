@@ -1,10 +1,10 @@
-<h1>VISTA NEW</h1>
+<h1>VISTA edit</h1>
 
 <%= form_with(model: @todo, local: true) do|f| %>
 <%= f.label :description %>
 <%= f.text_field :description %>
 <%= f.label :completed %>
 <%= f.text_field :completed %>
-<%= f.submit 'enviar' %>
+<%= f.submit 'Editar' %>
 
 <% end %>

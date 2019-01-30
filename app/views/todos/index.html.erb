@@ -1,7 +1,10 @@
     <h1>HOLA SOY TODO</h1>
 
 <ul class="list-group">
-  <li class="list-group-item">Calamar</li>
-  <li class="list-group-item">calamar</li>
+<% @todos.each do |todos|  %>
+  <li class="list-group-item"><%= todos.description %></li>
+  <li class="list-group-item"><%= todos.completed %></li>
+  <li><%= link_to 'Ir a',new_path %></li>
+  <% end %>
   
 </ul>
