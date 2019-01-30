@@ -23,9 +23,16 @@ def edit
     @todos = Todo.find(params[:id])
 end
 
-def update 
+def update  
     
     @todos = Todo.find(params[:id])   
+end
+
+def destroy 
+   
+    @todos = Todo.find(params[:id])
+    todos.destroy
+    redirect_to root_path
 end
 
 

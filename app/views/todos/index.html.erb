@@ -4,7 +4,7 @@
 <% @todos.each do |todos|  %>
   <li class="list-group-item"><%= todos.description %></li>
   <li class="list-group-item"><%= todos.completed %></li>
-  <li><%= link_to 'Ir a',new_path %></li>
+  <li><%= link_to 'Ir a', todos_new_path %></li>
   <% end %>
   
 </ul>
