@@ -2,7 +2,20 @@ class TodosController < ApplicationController
 
 def index 
     @todos = Todo.all
-    @todo = Todo.new
 end
+
+def new 
+    @todo = Todo.new
+    @todo.save
+end
+
+def 
+
+
+end 
+
+    
+end
+
 
 end
